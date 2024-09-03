@@ -32,8 +32,7 @@ def detect_registration_number(
         if "เลขทะเบียน" in text:
             # Crop the image using the bounding box coordinates
             (x_min, y_min), (x_max, y_max) = bbox[0], bbox[2]
-            cropped_roi = image[y_min - 50: y_max + 100,
-                                x_min - 50: x_max + 250]
+            cropped_roi = image[y_min - 50 : y_max + 100, x_min - 50 : x_max + 250]
             return cropped_roi, reader.readtext(cropped_roi)
             # Reread the image
     return None, None
