@@ -17,6 +17,8 @@ flake8 = "^7.1.1"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+line-length = 88
+indent-width = 4
 
 [tool.ruff]
 target-version = "py310"
