@@ -20,6 +20,6 @@ def main(image_path: str) -> datetime | None:
 
 if __name__ == "__main__":
     result = main(
-        "/Users/preme/erudite/EasyOCR_project/Dataset/date/Y670874_1_(IBCLNG)-1.png"
+        "example.png"
     )
     print(result)
